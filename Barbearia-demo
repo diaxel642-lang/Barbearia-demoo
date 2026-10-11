@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Elite</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101010;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 18px;
+      text-align: center;
+      background: #181818;
+      border-bottom: 1px solid #cba45c;
+    }
+
+    header h1 {
+      color: #e6bd69;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 7px;
+      font-size: 13px;
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background:
+        linear-gradient(#0009, #000c),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80")
+        center/cover;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .gold {
+      color: #e6bd69;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+      color: #eeeeee;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e6bd69;
+      color: #111111;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #e6bd69;
+      margin-bottom: 25px;
+      font-size: 27px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #e6bd69;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about {
+      text-align: center;
+      color: #cccccc;
+    }
+
+    .contact {
+      text-align: center;
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 30px 15px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      padding: 22px;
+      text-align: center;
+      background: #080808;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    @media (max-width: 360px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav a {
+        margin: 0 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>BARBEARIA ELITE</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero" id="inicio">
+      <h2>O teu estilo.<br>
+        <span class="gold">A nossa arte.</span>
+      </h2>
+
+      <p>Cortes modernos para quem quer destacar-se.</p>
+
+      <a class="button" href="#servicos">
+        Ver serviços
+      </a>
+    </div>
+
+    <section id="servicos">
+      <h2 class="section-title">Os nossos serviços</h2>
+
+      <div class="services">
+        <div class="card">
+          <h3>Corte normal</h3>
+          <p class="price">2.000 Kz</p>
+        </div>
+
+        <div class="card">
+          <h3>Degradê / Fade</h3>
+          <p class="price">2.500 Kz</p>
+        </div>
+
+        <div class="card">
+          <h3>Corte e barba</h3>
+          <p class="price">3.500 Kz</p>
+        </div>
+
+        <div class="card">
+          <h3>Desenhos</h3>
+          <p class="price">3.000 Kz</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2 class="section-title">O nosso estilo</h2>
+
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80"
+          alt="Trabalho de barbearia">
+
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80"
+          alt="Interior de uma barbearia">
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2 class="section-title">Sobre nós</h2>
+
+      <p class="about">
+        Na Barbearia Elite, cada corte é feito com
+        dedicação, atenção aos detalhes e respeito
+        pelo estilo de cada cliente.
+      </p>
+    </section>
+
+    <section id="contacto">
+      <div class="contact">
+        <h2 class="section-title">Marca o teu corte</h2>
+
+        <p>Entra em contacto connosco pelo WhatsApp.</p>
+
+        <a class="button"
+           href="https://wa.me/244923000000?text=Ola%2C%20quero%20marcar%20um%20corte"
+           target="_blank"
+           rel="noopener">
+          Marcar pelo WhatsApp
+        </a>
+
+        <p style="margin-top:20px; margin-bottom:0;">
+          Localização: Luanda, Angola
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Barbearia Elite © 2026</p>
+    <p>Modelo demonstrativo criado com HTML e CSS.</p>
+  </footer>
+
+</body>
+</html>
